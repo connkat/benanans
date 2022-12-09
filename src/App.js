@@ -1,5 +1,5 @@
 import logowhite from './images/logo-white.png';
-import bg from './images/benanas1.jpeg';
+
 import './App.css';
 
 function App() {
