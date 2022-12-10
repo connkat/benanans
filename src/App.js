@@ -8,13 +8,11 @@ import soundcloud from "./images/socials/soundcloud.png";
 import spotify from "./images/socials/spotify.png";
 
 import "./App.css";
-import CustomSidebar from "./Components/CustomSidebar";
 
 function App() {
   return (
     <div className="App">
       <div className="sidebar">
-        <CustomSidebar />
       </div>
       <img src={logowhite} className="logo" alt="logo" />
       <div className="text">
