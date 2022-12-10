@@ -4,8 +4,8 @@ function CustomSidebar() {
   const { collapseSidebar } = useProSidebar();
 
   return (
-    <div style={{ display: "flex", height: "100%", position: "absolute", right: 0, flexDirection: "row-reverse"}}>
-      <Sidebar collapsedWidth="0" width="40%">
+    <div style={{ display: "flex", height: "100%", position: "absolute", right: 0, flexDirection: "row-reverse",  cursor: "url('./images/pixel2.png')"}}>
+      <Sidebar collapsedWidth="0" width="40%" defaultCollapsed={true} >
         <p>
           Benanas is hot off a busy music festival season that took him all over
           Alberta, British Columbia, and Saskatchewan. With original productions

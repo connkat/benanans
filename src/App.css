@@ -61,4 +61,5 @@ a:visited {
   position: fixed;
   right: 0;
   padding-right: 10vh;
+  cursor: url("./images/pixel1.png"), auto;
 }
