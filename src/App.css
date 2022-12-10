@@ -8,11 +8,6 @@
   cursor: url("./images/pixel2.png"), auto;
 }
 
-/* .sidebar {
-  position: absolute;
-  right: 0;
-} */
-
 .logo {
   max-width: 80vh;
 }
@@ -38,10 +33,16 @@ a:visited {
   text-decoration: none;
 }
 
-.social {
+.bottom-row {
   position: fixed;
   bottom: 0;
-  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.social {
   display: flex;
   justify-content: space-around;
   padding-left: 8vh;
@@ -54,4 +55,10 @@ a:visited {
 .social-icon-insta {
   max-width: 14vh;
   margin-top: 2vh;
+}
+
+.music-player {
+  position: fixed;
+  right: 0;
+  padding-right: 10vh;
 }

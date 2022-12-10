@@ -1,3 +1,5 @@
+import ReactPlayer from "react-player";
+
 import logowhite from "./images/logo-white.png";
 import bandcamp from "./images/socials/bandcamp.png";
 import facebook from "./images/socials/facebook.png";
@@ -28,46 +30,55 @@ function App() {
           </a>
         </h1>
       </div>
-      <div className="social">
-        <a
-          href="https://www.facebook.com/ItsBenanas"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={facebook} className="social-icon" alt="social-icon" />
-        </a>
-        <a
-          href="https://www.instagram.com/itsbenanas/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src={instagram}
-            className="social-icon-insta"
-            alt="social-icon"
+      <div className="bottom-row">
+        <div className="social">
+          <a
+            href="https://www.facebook.com/ItsBenanas"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={facebook} className="social-icon" alt="social-icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/itsbenanas/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={instagram}
+              className="social-icon-insta"
+              alt="social-icon"
+            />
+          </a>
+          <a
+            href="https://benanas.bandcamp.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={bandcamp} className="social-icon" alt="social-icon" />
+          </a>
+          <a
+            href="https://soundcloud.com/benanas"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={soundcloud} className="social-icon" alt="social-icon" />
+          </a>
+          <a
+            href="https://open.spotify.com/artist/1Fv8WShM73yWzLV29yoYNg?si=UHm7XAY5RqC9_DdzInk9wA&"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={spotify} className="social-icon" alt="social-icon" />
+          </a>
+        </div>
+        <div className="music-player">
+          <ReactPlayer
+            url="https://soundcloud.com/relativitylounge/the-naughty-list"
+            height="10vh"
+            width="70vh"
           />
-        </a>
-        <a
-          href="https://benanas.bandcamp.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={bandcamp} className="social-icon" alt="social-icon" />
-        </a>
-        <a
-          href="https://soundcloud.com/benanas"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={soundcloud} className="social-icon" alt="social-icon" />
-        </a>
-        <a
-          href="https://open.spotify.com/artist/1Fv8WShM73yWzLV29yoYNg?si=UHm7XAY5RqC9_DdzInk9wA&"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={spotify} className="social-icon" alt="social-icon" />
-        </a>
+        </div>
       </div>
     </div>
   );
