@@ -30,6 +30,13 @@ function App() {
           </a>
         </h1>
       </div>
+      <div className="music-player-mobile">
+        <ReactPlayer
+          url="https://soundcloud.com/relativitylounge/the-naughty-list"
+          height="20vh"
+          width="40vh"
+        />
+      </div>
       <div className="bottom-row">
         <div className="social">
           <a
@@ -72,7 +79,7 @@ function App() {
             <img src={spotify} className="social-icon" alt="social-icon" />
           </a>
         </div>
-        <div className="music-player">
+        <div className="music-player-desktop">
           <ReactPlayer
             url="https://soundcloud.com/relativitylounge/the-naughty-list"
             height="10vh"

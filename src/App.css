@@ -1,5 +1,5 @@
 .App {
-  height: 100vh;
+  min-height: 100vh;
   background: url("./images/benanas1.jpeg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -39,7 +39,7 @@ a:visited {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
 }
 
 .social {
@@ -57,9 +57,86 @@ a:visited {
   margin-top: 2vh;
 }
 
-.music-player {
+.music-player-desktop {
   position: fixed;
   right: 0;
   padding-right: 10vh;
   cursor: url("./images/pixel1.png"), auto;
+}
+
+.music-player-mobile {
+  display: hidden;
+  position: absolute;
+  left: -999em;
+}
+
+/* mobile */
+@media only screen and (max-width: 821px) {
+  .App {
+    background-position:-50vh;
+  }
+
+  .sidebar{
+    display: hidden;
+    position: absolute;
+    left: -999em;
+  }
+
+  h1 {
+    font-size: 3vh;
+  }
+
+  .logo {
+    max-width: 40vh;
+    -webkit-filter: drop-shadow(5px 5px 5px #666666);
+    filter: drop-shadow(5px 5px 5px #101010);
+  }
+
+  .text {
+    padding-left: 2vh;
+    padding-top: 12vh;
+    font-size: 1vh;
+  }
+
+  a {
+    color:rgb(246, 242, 161);
+    text-shadow:  1px 1px 2px black;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  .music-player-mobile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    padding-top: 10vh;
+  }
+
+  .bottom-row {
+    flex-direction: column;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1vh;
+  }
+  .social-icon {
+    max-width: 5vh;
+    padding: 2vh;
+  }
+
+  .social-icon-insta {
+    max-width: 7vh;
+    margin-top: 2vh;
+  }
+
+  .music-player-desktop {
+    display: hidden;
+    position: absolute;
+    left: -999em;
+  }
 }
