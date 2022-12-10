@@ -8,6 +8,11 @@
   cursor: url("./images/pixel2.png"), auto;
 }
 
+/* .sidebar {
+  position: absolute;
+  right: 0;
+} */
+
 .logo {
   max-width: 80vh;
 }
@@ -31,4 +36,22 @@ a:hover {
 
 a:visited {
   text-decoration: none;
+}
+
+.social {
+  position: fixed;
+  bottom: 0;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 8vh;
+}
+.social-icon {
+  max-width: 10vh;
+  padding: 2vh;
+}
+
+.social-icon-insta {
+  max-width: 14vh;
+  margin-top: 2vh;
 }
