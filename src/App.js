@@ -32,7 +32,7 @@ function App() {
       </div>
       <div className="music-player-mobile">
         <ReactPlayer
-          url="https://soundcloud.com/relativitylounge/the-naughty-list"
+          url="https://soundcloud.com/benanas/wicked-woods-2022"
           height="20vh"
           width="40vh"
         />
