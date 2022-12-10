@@ -5,7 +5,7 @@ function CustomSidebar() {
 
   return (
     <div style={{ display: "flex", height: "100%", position: "absolute", right: 0, flexDirection: "row-reverse"}}>
-      <Sidebar>
+      <Sidebar collapsedWidth="0" width="40%">
         <p>
           Benanas is hot off a busy music festival season that took him all over
           Alberta, British Columbia, and Saskatchewan. With original productions
@@ -29,11 +29,11 @@ function CustomSidebar() {
           give them exactly what they needed with a creative flair sprinkled on
           top. You’re sure to get four things when seeing a live set: balanced
           blends, tasteful turntablism, viscous vibes, and of course, that
-          sweet, sweet potassium
+          sweet, sweet potassium.
         </p>
       </Sidebar>
       <main>
-        <button onClick={() => collapseSidebar()} style={{fontSize: "4vh", opacity: 0.5}}>Bio</button>
+        <button onClick={() => collapseSidebar()} style={{fontSize: "4vh", opacity: 0.7}}>Bio &gt;</button>
       </main>
     </div>
   );
