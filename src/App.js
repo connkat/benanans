@@ -26,7 +26,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            Booking Request
+            Contact Me
           </a>
         </h1>
       </div>
